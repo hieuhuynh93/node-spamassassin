@@ -44,10 +44,9 @@ export class PostmarkWebservice implements SpamAssassinInterface {
       if (!data.success) {
         throw new Error(data.message || 'Unknown error from Postmark SpamCheck API');
       }
-      if (typeof data.score !== 'number') {
-        throw new Error('API did not return a score');
+      if (data.score === undefined) {
+        throw new Error('No score returned from Postmark SpamCheck API');
       }
-
       this.report = data.report ?? null;
       return data.score;
     } catch (err: any) {

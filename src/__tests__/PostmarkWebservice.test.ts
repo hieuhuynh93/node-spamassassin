@@ -56,7 +56,7 @@ describe('PostmarkWebservice', () => {
     });
 
     const svc = new PostmarkWebservice();
-    await expect(svc.getScore('y')).rejects.toThrow('API did not return a score');
+    await expect(svc.getScore('y')).rejects.toThrow('No score returned from Postmark SpamCheck API');
   });
 
   it('should reset previous report on each getScore call', async () => {
