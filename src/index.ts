@@ -1,2 +1,2 @@
-export { PostmarkWebservice } from './PostmarkWebservice.js';
+export { PostmarkWebservice } from './PostmartService.js';
 export { SpamAssassinInterface } from './SpamAssassinInterface.js';
