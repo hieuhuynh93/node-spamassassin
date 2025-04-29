@@ -5,7 +5,7 @@ import { SpamAssassinInterface } from './SpamAssassinInterface.js';
  * Client for the Postmark SpamCheck API, implements SpamAssassinInterface.
  */
 export class PostmarkWebservice implements SpamAssassinInterface {
-  private static readonly WEBSERVICE_URL = 'http://spamcheck.postmarkapp.com/filter';
+  private static readonly WEBSERVICE_URL = 'https://spamcheck.postmarkapp.com/filter';
   private client: AxiosInstance;
   private wantLongReport: boolean;
   private report: string | null = null;
