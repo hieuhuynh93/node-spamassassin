@@ -55,5 +55,9 @@ Methods
 ## Inspiration ❤️
 This library was inspired by and designed to mirror the simplicity of **[riverline-spamassassin](https://github.com/rcambien/riverline-spamassassin)**, but targets the Postmark SpamCheck API and is fully typed in TypeScript.
 
+## Contributing
+This library was originally developed to meet my personal requirements. Contributions are welcome and appreciated!
+Feel free to open issues, suggest enhancements, or submit pull requests.
+
 ## License 📄
 MIT © Hieu Huynh
